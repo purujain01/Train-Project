@@ -1,0 +1,84 @@
+table,tr,td{
+    padding: 2px;
+    /* color: blue; */
+    border: 1px solid black;
+}
+#a,#p {
+    text-align: centre;
+    margin-left: 90px;
+}
+#b{
+    width: 400px; 
+    margin: 0 auto;
+    background-color: #F0F8FF;
+    padding: 20px; 
+    border: none;
+}
+#d,#e{
+    /* width: 400px;
+    margin: 0 auto; */
+    background-color: #DCDCDC;
+    padding: 8px;
+    width: 100%;
+}
+#f{
+    margin-left: 50px;
+}
+#s{
+    width: 200px; 
+    margin: 0 auto;
+    background-color: #f2f2ea;
+    padding: 10px; 
+    border: none;
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+    
+}
+#load{
+    text-align: center;
+    color: violet;
+    font-size: 40px;
+}
+li{
+    color: #98FB98;
+}
+button {
+    padding: 4px 25px 4px 25px;
+    border-radius: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1.5px solid blue; */
+    border: none;
+    background-color: #87CEFA;
+    color: white;
+    font-weight: bold;
+}
+button:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+h3,input,button {
+    margin-left: 60px;
+}
+h3{
+    color: blue;
+}
+h1 {
+    margin-left: 520px;
+}
+#error{
+    color: red;
+    /* margin-left: 450px; */
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+table {
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+td {
+    padding: 40px;
+}

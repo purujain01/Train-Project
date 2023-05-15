@@ -1,0 +1,68 @@
+<div id = "d">
+    <h1>Ticket Reservation</h1>
+</div>
+<br><br>
+<div id = "a">
+    <div id = "b">
+        <h3>Number of seats to be booked: </h3>
+        <input [(ngModel)] = "seats">
+        <button (click) = "bookSeats()">Book</button>
+    </div>
+</div>
+<br>
+<p id = "error">{{error}}</p>
+<p id = "load" *ngIf = "loading">Booking.....</p>
+<div id = "p" *ngIf = "show">
+    <div id = "s">
+        <p >Seats booked are:</p>
+        <ul>
+            <li *ngFor = "let m of mess?.data">B1-{{m}}</li>
+        </ul> 
+    </div>
+</div><br><br>
+<!-- *ngIf = "mess?.data" -->
+<div id = "e" *ngIf = "show">
+    <div id = "f">
+        <h1>Coach B1</h1>
+    </div>
+</div><br><br>
+<table *ngIf = "show">
+    <tr>
+        <td *ngFor = "let val of num[0]; let i = index" [ngStyle] = "{ background: assignColour(i+1) }">{{val}}</td>
+    </tr>
+    <tr>
+        <td *ngFor = "let val of num[1]; let i = index" [ngStyle] = "{ background: assignColour(i+8) }">{{val}}</td>
+    </tr>
+    <tr>
+        <td *ngFor = "let val of num[2]; let i = index" [ngStyle] = "{ background: assignColour(i+15) }">{{val}}</td>
+    </tr>
+    <tr>
+        <td *ngFor = "let val of num[3]; let i = index" [ngStyle] = "{ background: assignColour(i+22) }">{{val}}</td>
+    </tr>
+    <tr>
+        <td *ngFor = "let val of num[4]; let i = index" [ngStyle] = "{ background: assignColour(i+29) }">{{val}}</td>
+    </tr>
+    <tr>
+        <td *ngFor = "let val of num[5]; let i = index" [ngStyle] = "{ background: assignColour(i+36) }">{{val}}</td>
+    </tr>
+    <tr>
+        <td *ngFor = "let val of num[6]; let i = index" [ngStyle] = "{ background: assignColour(i+43) }">{{val}}</td>
+    </tr>
+    <tr>
+        <td *ngFor = "let val of num[7]; let i = index" [ngStyle] = "{ background: assignColour(i+50) }">{{val}}</td>
+    </tr>
+    <tr>
+        <td *ngFor = "let val of num[8]; let i = index" [ngStyle] = "{ background: assignColour(i+57) }">{{val}}</td>
+    </tr>
+    <tr>
+        <td *ngFor = "let val of num[9]; let i = index" [ngStyle] = "{ background: assignColour(i+64) }">{{val}}</td>
+    </tr>
+    <tr>
+        <td *ngFor = "let val of num[10]; let i = index" [ngStyle] = "{ background: assignColour(i+71) }">{{val}}</td>
+    </tr>
+    <tr>
+        <td *ngFor = "let val of num[11]; let i = index" [ngStyle] = "{ background: assignColour(i+78) }">{{val}}</td>
+    </tr>
+    
+
+</table>
