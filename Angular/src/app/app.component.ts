@@ -57,10 +57,10 @@ export class AppComponent {
   bookSeats(){
     this.error = undefined
     this.mess = undefined
+    this.show = false
     if(!this.seats) this.error = "Input required"
     else if(this.seats == 0) this.error = "Number of seats cannot be 0"
     else {
-      this.show = false
       this.loading  = true
       this.httpService.getNumberOfSeats(this.seats)
       this.obs2 = this.httpService.bookSeats()                             
